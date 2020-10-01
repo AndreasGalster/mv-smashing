@@ -31,6 +31,8 @@ nav {
   justify-content: space-between;
   align-items: center;
   font-family: "Nunito", sans-serif;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 nav ul {
@@ -62,8 +64,17 @@ nav a {
 }
 
 nav #logo {
-  margin-bottom: -10%;
+  margin-bottom: -19%;
   height: 60px;
+}
+
+@media (max-width: 1400px) {
+  nav #logo {
+    object-fit: cover;
+    width: 50px;
+    object-position: left;
+    margin-bottom: -50%;
+  }
 }
 
 nav #nav-more img {
